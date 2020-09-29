@@ -2,12 +2,14 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.4.0"
+    `maven-publish`
 }
 
 group = "me.sander"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 dependencies {
@@ -19,4 +21,12 @@ dependencies {
 }
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "14"
+}
+
+publishing {
+    publications {
+        register("mavenJava", MavenPublication::class) {
+            from(components["java"])
+        }
+    }
 }

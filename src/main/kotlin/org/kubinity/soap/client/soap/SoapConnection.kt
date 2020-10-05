@@ -1,4 +1,4 @@
-package trinity.core.soap.client.soap
+package org.kubinity.soap.client.soap
 
 import java.net.URL
 import javax.xml.soap.SOAPConnection

@@ -1,4 +1,4 @@
-package trinity.core.soap.client.command
+package org.kubinity.soap.client.command
 
 import javax.xml.soap.MessageFactory
 import javax.xml.soap.SOAPMessage

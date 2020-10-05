@@ -1,4 +1,4 @@
-package trinity.core.soap.client.command
+package org.kubinity.soap.client.command
 
 class MiscCommand private constructor() {
     companion object {

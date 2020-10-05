@@ -1,6 +1,6 @@
-package trinity.core.soap.client.command
+package org.kubinity.soap.client.command
 
-import trinity.core.soap.client.soap.SoapClient
+import org.kubinity.soap.client.soap.SoapClient
 
 class CommandInvoker(private val soapClient: SoapClient) {
     fun invoke(command: Command) {

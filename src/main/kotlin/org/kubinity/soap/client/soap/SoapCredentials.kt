@@ -1,4 +1,4 @@
-package trinity.core.soap.client.soap
+package org.kubinity.soap.client.soap
 
 import org.apache.commons.codec.binary.Base64
 
